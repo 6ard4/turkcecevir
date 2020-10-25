@@ -1,3 +1,28 @@
+import os
+import time
+os.system("python -m pip install colorama")
+os.system("pip install tabulate")
+print("tabulate yüklendi")
+os.system("pip install googletrans")
+print("googletrans ve tabulate yüklendi! \nBitti!")
+time.sleep(2)
+os.system("clear")
+import colorama
+from colorama import Fore, Back, Style
+
+colorama.init()
+print(Fore.RED)
+print(Fore.YELLOW + Back.BLUE)
+print("""
+
+            ########################
+            |                      |
+            |   created by 6ard4   |
+            |                      |
+            ########################
+""")
+print(Style.RESET_ALL)
+
 from tabulate import tabulate
 from googletrans import Translator
 
@@ -22,3 +47,4 @@ if __name__ == "__main__":
     translate = input(r"Giriniz==> ")
     language = "tr"
     print(Simple_Translator(translate, language))
+
