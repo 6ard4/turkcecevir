@@ -48,3 +48,5 @@ if __name__ == "__main__":
     language = "tr"
     print(Simple_Translator(translate, language))
 
+
+input("Devam etmek için herhangi bir tuşa bas...")
